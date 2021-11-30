@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/example', function () {
+    return "Hi there";
+});
+
+Route::get('/about', function () {
+    return "My info..";
+});
+
+Route::get('/contact', function () {
+    return "my contact...";
+});
+
+Route::get('/post/{id}/{name}', function ($id,$name) {
+    return "hello there my number is".$id.$name;
 });
