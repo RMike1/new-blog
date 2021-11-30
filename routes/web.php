@@ -25,6 +25,7 @@ Route::get('/contact', function () {
     return "my contact...";
 });
 
+
 Route::get('/post/{id}/{name}', function ($id,$name) {
     return "hello there my number is".$id.$name;
 });
