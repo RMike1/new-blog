@@ -29,3 +29,10 @@ Route::get('/contact', function () {
 Route::get('/post/{id}/{name}', function ($id,$name) {
     return "hello there my number is".$id.$name;
 });
+
+Route::get('admin/posts/example', array('as'=>'admin.home',function() {
+    $url = route('admin.home');
+
+    return "this url is".$url;
+}));
+
